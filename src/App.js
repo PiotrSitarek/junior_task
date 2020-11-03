@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './header/header';
+import BookmarkInfo from './bookmarkInfo/bookmarkInfo';
+import Features from './features/features';
+import OnClickSlider from './onClickSlider/onClickSlider';
+import Download from './download/download';
+import Browsers from './browsers/browsers';
+import Questions from './questions/questions';
+// import QuestionsList from './questionsList/questionsList';
+import Contact from './contactForm/contact';
+import Footer from './footer/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <BookmarkInfo />
+      <Features />
+      <OnClickSlider />
+      <Download />
+      <Browsers />
+      <Questions />
+      {/* <QuestionsList /> */}
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

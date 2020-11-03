@@ -1,0 +1,234 @@
+@media (max-width: 376px) {
+    .mainPage_onClickSlider {
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .onClickSlider_buttons-container {
+        margin: 1rem 0 1rem 0;
+        width: 80%;
+        height: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        .onClickSlider_button {
+            width: 80%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid $neutral_grey;
+        }
+
+        .onClickSlider_button:focus {
+            outline: none;
+        }
+
+
+        .onClickSlider_button:hover {
+            cursor: pointer;
+            border-bottom: 3px solid $main_red;
+        }
+    }
+
+    .onClickSlider_slides-container {
+
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+        font-family: $font-source;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slides_container {
+        box-sizing: content-box;
+        width: 100%;
+        height: 90%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .slide_text-container {
+            margin: 2rem 0 2rem 0;
+            width: 85%;
+        }
+
+        .slide_slogan {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $neutral_blue;
+
+        }
+
+        .slide_info {
+            color: $neutral_grey;
+            padding: 1rem 0 1rem 0;
+        }
+
+        .slide_button {
+            display: none
+        }
+
+        .slide_image-container {
+            width: 85%;
+            height: auto;
+            display: flex;
+            position: relative;
+
+        }
+
+        .slide_image {
+            width: 100%;
+            margin-left: 1rem;
+        }
+
+        .slide_image-background {
+            width: 80%;
+            height: 75%;
+            background-color: $main_blue;
+            border-radius: 0 0 50px 0;
+            z-index: -1;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    .invisible {
+        display: none;
+    }
+}
+
+
+@media(min-width:376px) {
+    .mainPage_onClickSlider {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .onClickSlider_buttons-container {
+        width: 70%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .onClickSlider_button {
+            width: 33.3%;
+            border: transparent;
+            background-color: transparent;
+            border-bottom: 2px solid $neutral_grey;
+
+        }
+
+        .onClickSlider_button:focus {
+            outline: none;
+        }
+
+        .onClickSlider_button:hover {
+            cursor: pointer;
+            border-bottom: 2px solid $main_red;
+            color: $main_red;
+        }
+    }
+
+    .onClickSlider_slides-container {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0 2rem 0;
+        font-family: $font-source;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slides_container {
+        box-sizing: content-box;
+        width: 100%;
+        height: 90%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .slide_text-container {
+            width: 48%;
+            margin: 0 0 0 2rem;
+        }
+
+        .slide_slogan {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $neutral_blue;
+
+        }
+
+        .slide_info {
+            color: $neutral_grey;
+            padding: 1rem 0 1rem 0;
+        }
+
+        .slide_button {
+            background-color: $main_blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: .4rem 1rem .4rem 1rem;
+            border-radius: .2rem;
+        }
+
+        .slide_button:focus {
+            outline: none;
+        }
+
+        .slide_image-container {
+            width: 40%;
+            height: auto;
+            display: flex;
+            position: relative;
+
+        }
+
+        .slide_image {
+            width: 100%;
+            margin-left: 1rem;
+        }
+
+        .slide_image-background {
+            width: 80%;
+            height: 75%;
+            background-color: $main_blue;
+            border-radius: 0 0 50px 0;
+            z-index: -1;
+            position: absolute;
+            bottom: -20px;
+            left: -10px;
+        }
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+}
