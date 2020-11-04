@@ -1,4 +1,4 @@
-@media (max-width: 376px) {
+@media (max-width: 400px) {
 
     .mainPage_header {
         width: 100%;
@@ -19,7 +19,6 @@
     }
 
     .header_mobilelogo {
-        // margin-top: 1.7rem;
         position: absolute;
         top: 1.7rem;
         left: 1rem;
@@ -156,28 +155,35 @@
     }
 }
 
-@media(min-width:376px) {
+@media(min-width:400px)and(max-width:650px) {
+    #header_navigation-listID {
+        font-size: .6rem;
+    }
+}
+
+@media(min-width:400px) {
     .mainPage_header {
         width: 100%;
         height: 5rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
+    .header_logo {
+        margin-left: 1rem;
+    }
+
     .header_navigation {
-        width: 30%;
 
         .header_navigation-list {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             font-family: $font-source;
-            font-size: 18px;
-            padding: 1rem;
 
             .navigation_list-element {
-                padding: .4rem 1rem .4rem 1rem;
+                padding: .4rem .5rem .4rem .5rem;
             }
 
             .navigation_list-element:hover {
@@ -189,7 +195,6 @@
                 border: 1px solid $main_red;
                 border-radius: .4rem;
                 color: white;
-                // background-color: $main_red;
                 background-color: $main_red;
             }
 
@@ -203,20 +208,8 @@
                 border: 1px solid $main_red;
                 border-radius: .4rem;
                 color: $main_red;
-                // background-color: $main_red;
                 background-color: transparent;
             }
-
-            // .navigation_list-login-active {
-            //     background-color: $main_red;
-            //     color: white;
-            //     border: 1px solid $main_red;
-            //     border-radius: .4rem;
-            // }
-
-            // .navigation_list-login-active:hover {
-            //     color: white;
-            // }
         }
     }
 

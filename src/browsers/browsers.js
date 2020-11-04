@@ -31,7 +31,6 @@ const Browsers = () => {
                 <img className="browser_container-dots" src={dots} alt="Dots_border"></img>
                 <button className="browser_container-button">Add & install extension</button>
             </div>
-
         </section>
     )
 }

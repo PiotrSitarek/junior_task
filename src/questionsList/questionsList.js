@@ -1,20 +1,24 @@
 import React from 'react';
-import Arrow from '../images/icon-arrow.svg';
-
 
 const QuestionsList = () => {
 
-
     return (
         <section className="mainPage_questionsList">
-            <div id="rozwin">What is Bookmark?
-            
+            <div className="question_container">What is Bookmark?</div>
+            <div className="answer_container">
+                <p>V</p>
+                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
             </div>
-            <div id="tresc">
-            <img  src={Arrow} alt="Arrow"></img>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div className="question_container">How can I request a new browser?</div>
+            <div className="answer_container">
+                <p>V</p>
+                <p>Maecenas ultricies tincidunt sapien vitae eleifend. Integer at consectetur metus, et auctor ex. Integer at consectetur metus, et auctor ex.</p>
             </div>
-
+            <div className="question_container">Is there a mobile app?</div>
+            <div className="answer_container">
+                <p>V</p>
+                <p>Maecenas ultricies tincidunt sapien vitae eleifend. Integer at consectetur metus, et auctor ex. Integer at consectetur metus, et auctor ex.</p>
+            </div>
         </section>
     )
 }

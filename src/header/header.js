@@ -18,20 +18,12 @@ const Header = () => {
             opener.style.height = "100%";
         }
     }
-    // const classChange = () => {
-    //     const loginButton = document.querySelector('.navigation_list-login');
-
-    //     loginButton.classList.toggle("navigation_list-login-active")
-
-    // }
-
 
     return (
         <section className="mainPage_header">
             <img className="header_logo" src={Logo} alt="Bookmark_logo"></img>
             <nav className="header_navigation">
-                <ul className="header_navigation-list">
-                    {/* <li className="navigation_list-element">Features</li> */}
+                <ul id="header_navigation-listID" className="header_navigation-list">
                     <Link to="mainPage_features" className="navigation_list-element" smooth={true} duration={1500}>FEATURES</Link>
                     <Link to="mainPage_pricing" className="navigation_list-element" smooth={true} duration={1500}>PRICING</Link>
                     <Link to="mainPage_contact" className="navigation_list-element" smooth={true} duration={1500}>CONTACT</Link>
@@ -49,16 +41,18 @@ const Header = () => {
             <div className="mobileMenu__dropdown">
                 <MobileLogo className="header_mobilelogo" />
                 <ul className="mobileDropdown__content">
-                    <li className="mobileMenu__link">FEATURES</li>
+                    <Link to="mainPage_features" className="mobileMenu__link" smooth={true} duration={1500}>FEATURES</Link>
+                    <Link to="mainPage_pricing" className="mobileMenu__link" smooth={true} duration={1500}>PRICING</Link>
+                    <Link to="mainPage_contact" className="mobileMenu__link" smooth={true} duration={1500}>CONTACT</Link>
+                    {/* <li className="mobileMenu__link">FEATURES</li>
                     <li className="mobileMenu__link">PRICING</li>
-                    <li className="mobileMenu__link">CONTACT</li>
+                    <li className="mobileMenu__link">CONTACT</li> */}
                     <li className="mobileMenu__link">LOGIN</li>
                     <div className="mobileMenu_socialIcons">
                         <img className="mobileMenu_socialIcons-element" src={Facebook} alt='Facebook_logo'></img>
                         <img className="mobileMenu_socialIcons-element" src={Twitter} alt='Twitter_logo'></img>
                     </div>
                 </ul>
-
             </div>
         </section >
     )

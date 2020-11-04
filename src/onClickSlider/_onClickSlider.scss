@@ -53,6 +53,7 @@
         width: 100%;
         height: 90%;
         display: none;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -177,7 +178,6 @@
             font-size: 1.5rem;
             font-weight: 500;
             color: $neutral_blue;
-
         }
 
         .slide_info {
@@ -196,6 +196,12 @@
 
         .slide_button:focus {
             outline: none;
+        }
+
+        .slide_button:active {
+            background-color: white;
+            color: $main_blue;
+            border: .1px solid $main_blue;
         }
 
         .slide_image-container {

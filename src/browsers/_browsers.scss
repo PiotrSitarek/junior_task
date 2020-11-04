@@ -19,7 +19,6 @@
         align-items: center;
         text-align: center;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
     }
 
     .browser_container-icon {
@@ -36,7 +35,6 @@
         font-size: .6rem;
         color: $neutral_grey;
         margin: 1rem 0 1rem 0;
-
     }
 
     .browser_container-dots {
@@ -52,11 +50,16 @@
         cursor: pointer;
         padding: .4rem 1rem .4rem 1rem;
         border-radius: .2rem;
-
     }
 
     .browser_container-button:focus {
         outline: none;
+    }
+
+    .browser_container-button:active {
+        background-color: white;
+        color: $main_blue;
+        border: .1px solid $main_blue;
     }
 }
 
@@ -68,7 +71,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .browser_container {
@@ -116,10 +118,15 @@
         cursor: pointer;
         padding: .4rem 1rem .4rem 1rem;
         border-radius: .2rem;
-
     }
 
     .browser_container-button:focus {
         outline: none;
+    }
+
+    .browser_container-button:active {
+        background-color: white;
+        color: $main_blue;
+        border: .1px solid $main_blue;
     }
 }

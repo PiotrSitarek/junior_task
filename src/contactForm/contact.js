@@ -20,16 +20,16 @@ const Contact = () => {
     const mailFormula = /\S+@\S+\.\S+/;
     const required = value => (mailFormula.test(value) ? undefined : 'Whoops, make sure it`s an email');
 
-
+    const errorIcon = (meta) => {
+        // do dokończenia, brak czasu      
+    }
 
     return (
         <section className="mainPage_contact">
             <p className="contact_joined">35 000+ ALREADY JOINED</p>
             <p className="contact_update">Stay up-to-date with what we`re doing</p>
             <div className="contact_form_container">
-
                 <Form onSubmit={fields => {
-
 
                 }}
                     render={({ handleSubmit, pristine, invalid }) => (
@@ -40,7 +40,7 @@ const Contact = () => {
                                     {({ input, meta }) => (
                                         <fieldset className="fieldset_positioner">
                                             <input {...input} className="contact_input" placeholder="Enter your email adress" />
-                                            {meta.error && meta.touched && <span className="contact__error">{meta.error}</span>}
+                                            {meta.error && meta.touched && <span className="contact__error">{meta.error}{errorIcon(meta)}</span>}
                                         </fieldset>
                                     )}
                                 </Field>
@@ -49,9 +49,6 @@ const Contact = () => {
                         </form >
                     )}
                 />
-
-
-
             </div>
         </section>
     )

@@ -1,7 +1,6 @@
 @media (max-width: 376px) {
     .mainPage_bookmarkInfo {
         width: 100%;
-        // height: auto;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -10,7 +9,6 @@
 
     .bookmarkInfo_imageContainer {
         width: 50%;
-        // height: auto;
         position: relative;
         margin: 1rem 0 1rem 0;
 
@@ -18,7 +16,6 @@
 
     .bookmarkInfo_image {
         width: 100%;
-        // height: auto;
     }
 
     .bookmarkInfo_image-background {
@@ -130,8 +127,6 @@
         right: 0;
     }
 
-
-
     .bookmarkInfo_text {
         width: 48%;
         font-family: $font-source;
@@ -140,7 +135,6 @@
             font-size: 2rem;
             font-weight: 500;
             color: $neutral_blue;
-
         }
 
         p {
@@ -148,6 +142,9 @@
             padding: 1rem 0 1rem 0;
         }
 
+        .bookmarkInfo_text-buttons {
+            height: 2.1rem;
+        }
 
         .bookmarkInfo_text-button {
             width: 140px;
@@ -160,7 +157,6 @@
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
         }
 
-
         .bookmarkInfo_text-button:focus {
             outline: none;
         }
@@ -172,7 +168,6 @@
         }
 
         .bookmarkInfo_text-button1:active {
-            // border: none;
             background-color: white;
             color: $main_blue;
             border: .1px solid $main_blue;
