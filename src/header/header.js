@@ -41,12 +41,12 @@ const Header = () => {
             <div className="mobileMenu__dropdown">
                 <MobileLogo className="header_mobilelogo" />
                 <ul className="mobileDropdown__content">
-                    <Link to="mainPage_features" className="mobileMenu__link" smooth={true} duration={1500}>FEATURES</Link>
+                    {/* <Link to="mainPage_features" className="mobileMenu__link" smooth={true} duration={1500}>FEATURES</Link>
                     <Link to="mainPage_pricing" className="mobileMenu__link" smooth={true} duration={1500}>PRICING</Link>
-                    <Link to="mainPage_contact" className="mobileMenu__link" smooth={true} duration={1500}>CONTACT</Link>
-                    {/* <li className="mobileMenu__link">FEATURES</li>
+                    <Link to="mainPage_contact" className="mobileMenu__link" smooth={true} duration={1500}>CONTACT</Link> */}
+                    <li className="mobileMenu__link">FEATURES</li>
                     <li className="mobileMenu__link">PRICING</li>
-                    <li className="mobileMenu__link">CONTACT</li> */}
+                    <li className="mobileMenu__link">CONTACT</li>
                     <li className="mobileMenu__link">LOGIN</li>
                     <div className="mobileMenu_socialIcons">
                         <img className="mobileMenu_socialIcons-element" src={Facebook} alt='Facebook_logo'></img>
