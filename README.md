@@ -1,4 +1,6 @@
 # junior_task with Create React App
+### `npm install` 
+To install in your computer.
 
 ### `npm start`
 
