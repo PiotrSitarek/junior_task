@@ -1,4 +1,13 @@
 # junior_task with Create React App
+
+Simple website available at piotrsitarek.pl/junior_task/
+
+## Technologies/tools
+* React.js
+* JavaScript
+* HTML
+* Sass
+
 ### `npm install` 
 To install in your computer.
 
