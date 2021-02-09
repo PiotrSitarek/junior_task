@@ -9,7 +9,7 @@ Simple website available at https://piotrsitarek.pl/junior_task/
 * Sass
 
 ### `npm install` 
-To install repo in your computer.
+To install in your computer.
 
 ### `npm start`
 
