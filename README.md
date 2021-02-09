@@ -1,6 +1,6 @@
 # junior_task with Create React App
 
-Simple website available at piotrsitarek.pl/junior_task/
+Simple website available at https://piotrsitarek.pl/junior_task/ 
 
 ## Technologies/tools
 * React.js
@@ -9,7 +9,7 @@ Simple website available at piotrsitarek.pl/junior_task/
 * Sass
 
 ### `npm install` 
-To install in your computer.
+To install repo in your computer.
 
 ### `npm start`
 
